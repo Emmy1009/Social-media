@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/profile.jpeg");
+}
+.container{
+    position: relative;
+    background: transparent;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-around;
+}
+.head-title{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-data{
+    position: relative;
+    margin-top: 45px;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.inputs input{
+    height: 40px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.inputs input[type="submit"]{
+    background-color: blue;
+    border: solid 2px white;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: larger;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.inputs input[type="submit"]:hover{
+    background-color: lightblue;
+    color: darkblue;
+}
+.foot{
+    position: absolute;
+    bottom: 60px;
+}
+.foot p{
+    color: white;
+}
+.foot p span{
+    color: blue;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.foot p span:hover{
+    color: lightblue;
+}
